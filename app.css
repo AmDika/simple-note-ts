@@ -51,9 +51,18 @@ input[type="color"] {
 }
 
 .Add {
-    position: relative;
-    bottom: -10px;
+    position: absolute;
+    bottom: -125px;
     right: 0px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: rgb(11, 182, 11);
+    font-weight: bold;
 }
 
 .notes {
@@ -66,7 +75,7 @@ input[type="color"] {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 15px 10px;
-    margin: 15px 0;
+    margin: 40px 0;
     position: relative;
     height: auto;
     animation: scale 0.4s;

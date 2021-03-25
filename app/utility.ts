@@ -1,15 +1,15 @@
-function getInputValues(elemID: string): string {
-  const inputElem: HTMLInputElem = <HTMLInputElement> document.getElementById(elemID);
-  return inputElem.value;
-}
+// function getInputValues(elemID: string): string {
+//   const inputElem: HTMLInputElem = <HTMLInputElement> document.getElementById(elemID);
+//   return inputElem.value;
+// }
 
 function getInputValAll(elem: string): string {
-  const valElem: HTMLInputElem = <HTMLInputElement> document.querySelector(elem);
-  return valEleme.value;
+  const valElem = <HTMLInputElement> document.querySelector(elem);
+  return valElem.value;
 }
 
 function logger(message: string): void {
   console.log(message)
 }
 
-export { getInputValues as getValue, getInputValAll as getVallAll, logger};
+export { getInputValAll as getValues, logger};

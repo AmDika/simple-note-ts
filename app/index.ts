@@ -1,18 +1,18 @@
 import { Note } from './note';
-import { getValue } from './utility';
+import { getValues, logger } from './utility';
 
 let noteApp: Note;
 let add = <HTMLElement> document.getElementById('add');
 
 // add click handler to the start game button
-document.addEventListener('DOMContentLoaded', () => {
-
-    // let noteApp = new Note();
-    // noteApp.displayNote();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+// });
 
 
 add.addEventListener('click', () => {
-    console.log('lkjdls')
-    noteApp.displayNote();
+    let theNotes = (document.getElementById('noteText') as HTMLInputElement).value;
+    logger(theNotes)
+    let notes = new Note(theNotes);
+    notes.displayNote()
+
 })
